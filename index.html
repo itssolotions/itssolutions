@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="App">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,8 +51,9 @@
           </div>
 
           <div class="inner cover">
+          <img src="images/logo.png" alt=""><br>
            we do IT, so you can focus on business.
-            <h1 class="cover-heading">Site under construction</h1>
+            <h2 class="cover-heading">We are a software development company specializing in database and web applications.</h2>
             <div data-ng-view="">
        
             </div>
@@ -60,7 +61,7 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>footer here</p>
+<!--              footer here-->
             </div>
           </div>
 
@@ -72,45 +73,14 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <script data-main="javascripts/main" src="javascripts/require.js"></script>
+<!--
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+     IE10 viewport hack for Surface/desktop Windows 8 bug 
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="javascripts/angular.js"></script>
     <script src="javascripts/angular-route.js"></script>
-    <script>
-        var App = angular.module("App", ['ngRoute']);
-        
-        var controllers = {};
-        controllers.simpleController = function($scope){
-
-        };
-        
-        App.controller(controllers);
-        App.config(function ($routeProvider){
-            $routeProvider
-            .when('/',
-                {
-                controller : 'simpleController',
-                templateUrl: 'partials/home.html'
-                })
-            .when('/about-us',
-                  {
-                controller: 'simpleController',
-                templateUrl: 'partials/about us.html'
-            })
-            .when('/services',
-                  {
-                controller: 'simpleController',
-                templateUrl: 'partials/services.html'
-            })
-            .when('/contacts',
-                  {
-                controller: 'simpleController',
-                templateUrl: 'partials/contacts.html'
-            }).otherwise({redirectTo: '/' });
-        });
-    </script>
+-->
   </body>
 </html>
